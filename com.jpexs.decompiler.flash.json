@@ -32,7 +32,7 @@
 				"rm usr/share/java/ffdec/ffdec.{bat,exe}",
 				"install -Dm644 usr/share/applications/FFDec.desktop /app/share/applications/com.jpexs.decompiler.flash.desktop",
 				"install -Dm644 usr/share/java/ffdec/icon.png /app/share/icons/hicolor/512x512/apps/com.jpexs.decompiler.flash.png",
-				"install -Dm644 com.jpexs.decompiler.flash.metainfo.xml /app/share/metainfo/com.jpexs.decompiler.flash.metainfo.xml",
+				"install -Dm644 com.jpexs.decompiler.flash.metainfo.xml -t /app/share/metainfo",
 				"mkdir -p /app/bin",
 				"mv usr/share/java/ffdec/* /app/bin",
 				"desktop-file-edit --set-key=Exec --set-value=ffdec.sh /app/share/applications/com.jpexs.decompiler.flash.desktop",
