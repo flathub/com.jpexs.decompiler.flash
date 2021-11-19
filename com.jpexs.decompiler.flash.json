@@ -25,8 +25,8 @@
 			"name": "jpexs.decompiler.flash",
 			"buildsystem": "simple",
 			"build-commands": [
-				"ar x ffdec_14.4.0.deb",
-				"rm -f ffdec_14.4.0.deb",
+				"ar x ffdec_14.5.0.deb",
+				"rm -f ffdec_14.5.0.deb",
 				"tar -xf data.tar.gz",
 				"rm -f control.tar.gz data.tar.gz debian-binary",
 				"rm usr/share/java/ffdec/ffdec.{bat,exe}",
@@ -42,8 +42,8 @@
 			"sources": [
 				{
 					"type": "file",
-					"url": "https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version14.4.0/ffdec_14.4.0.deb",
-					"sha256": "72fc1582d42a49ac175f6a317f3f804e2c3662ec3f0ad1ec2cbfb754c4472daa"
+					"url": "https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version14.5.0/ffdec_14.5.0.deb",
+					"sha256": "9148457c35d24a7202e05ff6c6119b986f0e75c210e209b5e0156e63d29d1b2c"
 				},
 				{
 					"type": "file",
