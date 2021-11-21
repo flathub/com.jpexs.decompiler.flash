@@ -62,6 +62,33 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+		<release version="14.5.2" date="2021-11-21">
+			<description>
+				<p>Fixed</p>
+				<ul>
+					<li>AS1/2 handle declaration of registers in certain cases</li>
+					<li>AS1/2 setProperty, getProperty handling</li>
+					<li><a href="https://www.free-decompiler.com/flash/issues/1750">#1750</a> Application won't start when cannot access font file</li>
+					<li>AS2 direct editation of classes - missing _global prefix</li>
+				</ul>
+			</description>
+		</release>
+		<release version="14.5.1" date="2021-11-20">
+			<description>
+				<p>Fixed</p>
+				<ul>
+					<li>AS 1/2 - do not use eval function on obfuscated increment/decrement</li>
+					<li>AS 1/2 direct editation - newline as "
+", not "
+"</li>
+					<li>AS 1/2 allow various nonstandard names for definelocal</li>
+					<li>AS 1/2 use DefineLocal in function instead of registers when eval, set is used</li>
+					<li>AS 1/2 direct editation - delete operator parenthesis</li>
+					<li>AS 1/2 direct editation - call function on eval</li>
+					<li>AS 1/2 export selection of scripts in buttons, classes and similar</li>
+				</ul>
+			</description>
+		</release>
 		<release version="14.5.0" date="2021-11-19"/>
 		<release version="14.4.0" date="2021-04-05"/>
 	</releases>
