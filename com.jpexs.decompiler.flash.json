@@ -24,30 +24,58 @@
 		{
 			"name": "jpexs.decompiler.flash",
 			"buildsystem": "simple",
+			"builddir": true,
+			"subdir": "jpexs",
+			"build-options": {
+				"env": {
+					"JAVA_HOME": "/app/jre",
+					"TOOLS_DIR": "travis/tools"
+				}
+			},
 			"build-commands": [
-				"ar x ffdec_14.6.0.deb",
-				"rm -f ffdec_14.6.0.deb",
-				"tar -xf data.tar.gz",
-				"rm -f control.tar.gz data.tar.gz debian-binary",
-				"rm usr/share/java/ffdec/ffdec.{bat,exe}",
-				"install -Dm644 usr/share/applications/FFDec.desktop /app/share/applications/com.jpexs.decompiler.flash.desktop",
-				"install -Dm644 usr/share/java/ffdec/icon.png /app/share/icons/hicolor/512x512/apps/com.jpexs.decompiler.flash.png",
-				"install -Dm644 com.jpexs.decompiler.flash.metainfo.xml -t /app/share/metainfo",
+				"unzip -u ./travis/tools/nsis-3.0-addon.zip -d $TOOLS_DIR/nsis-3.0-src",
+				"tar zxvf ./travis/tools/launch4j-3.12-linux.tgz -C $TOOLS_DIR",
+				"echo nsis.path = $TOOLS_DIR/nsis-3.0-src/bin > tools.properties",
+				"echo launch4j.path = $TOOLS_DIR/launch4j >> tools.properties",
+				"./make-version-properties.sh",
+				"../ant/bin/ant new-version-archive",
 				"mkdir -p /app/bin",
-				"mv usr/share/java/ffdec/* /app/bin",
-				"desktop-file-edit --set-key=Exec --set-value=ffdec.sh /app/share/applications/com.jpexs.decompiler.flash.desktop",
-				"desktop-file-edit --set-key=Icon --set-value=com.jpexs.decompiler.flash /app/share/applications/com.jpexs.decompiler.flash.desktop",
-				"chmod +x /app/bin/ffdec.sh"
+				"mv dist/* /app/bin",
+				"install -Dm755 resources/ffdec.sh -t /app/bin",
+				"install -Dm644 resources/icon.png /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png",
+				"install -Dm644 ../${FLATPAK_ID}.desktop -t /app/share/applications",
+				"install -Dm644 ../${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo"
 			],
 			"sources": [
 				{
+					"type": "git",
+					"url": "https://github.com/jindrapetrik/jpexs-decompiler.git",
+					"tag": "version14.6.0",
+					"commit": "400c650b24eea989776b56853d251559987f162c",
+					"dest": "jpexs",
+					"x-checker-data": {
+						"type": "git",
+						"tag-pattern": "^version([\\d.]+)$"
+					}
+				},
+				{
 					"type": "file",
-					"url": "https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version14.6.0/ffdec_14.6.0.deb",
-					"sha256": "ccb8bc95e49b106f64f2503eb30156c13dc24bdec5da2a6ca39d0b5410e876ce"
+					"path": "make-version-properties.sh",
+					"dest": "jpexs"
+				},
+				{
+					"type": "archive",
+					"url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.9-bin.tar.xz",
+					"sha512": "ecb09c83b24f98b9475849548558809ff21c88f8d39fbc3559f24df5fc640a50bbd885681d9c676285d8843bd3dc09a6238189c13a4238ba5c01385a5bd29542",
+					"dest": "ant"
 				},
 				{
 					"type": "file",
 					"path": "com.jpexs.decompiler.flash.metainfo.xml"
+				},
+				{
+					"type": "file",
+					"path": "com.jpexs.decompiler.flash.desktop"
 				}
 			]
 		}

@@ -1,0 +1,12 @@
+VERSION_PROP_FILE="version.properties"
+VERSION=$(git describe --tags | sed 's/version//')
+COMMIT_HASH=$(git rev-parse HEAD)
+VERSION_MAJOR=$(echo $VERSION | cut -d '.' -f 1)
+VERSION_MINOR=$(echo $VERSION | cut -d '.' -f 2)
+VERSION_RELEASE=$(echo $VERSION | cut -d '.' -f 3)
+echo "major=$VERSION_MAJOR" > $VERSION_PROP_FILE
+echo "minor=$VERSION_MINOR" >> $VERSION_PROP_FILE
+echo "release=$VERSION_RELEASE" >> $VERSION_PROP_FILE
+echo "build=0" >> $VERSION_PROP_FILE
+echo "revision=$COMMIT_HASH" >> $VERSION_PROP_FILE
+echo "debug=false" >> $VERSION_PROP_FILE
