@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
+<component type="desktop-application">
 	<id>com.jpexs.decompiler.flash</id>
 	<name>JPEXS Free Flash Decompiler</name>
 	<summary>Decompile and edit SWF files</summary>
