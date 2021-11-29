@@ -62,6 +62,75 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+		<release version="15.0.0" date="2021-11-29">
+			<description>
+				<p>Added</p>
+				<ul>
+					<li>Frame dependencies</li>
+				</ul>
+				<p>Changed</p>
+				<ul>
+					<li>AS1/2 direct editation no longer marked as experimental</li>
+				</ul>
+				<p>Fixed</p>
+				<ul>
+					<li>AS1/2 - switch with getvariable decompilation</li>
+					<li>AS1/2 - call action parameters as string</li>
+					<li>AS1/2 - direct editation - use actionadd instead of add2 on swfver &lt; 5</li>
+					<li>AS1/2 - tellTarget when single</li>
+					<li>AS1/2 - use slash syntax in get/setvariable only in eval/set</li>
+					<li>AS1/2 - get/setProperty when propertyindex is string</li>
+					<li>DefineEditText - ampersand in link href</li>
+					<li>AS1/2 - cannot use globalfunc/const variable names</li>
+					<li>AS2 - class detection when no constructor found</li>
+					<li>AS1/2 - subtract precedence</li>
+					<li>AS2 - getters and setters decompilation and editing</li>
+					<li>AS1/2 - definefunction2 suppresssuper parameter</li>
+					<li>New version dialog error when no main window available</li>
+					<li>AS1/2 direct editation - commands as expressions</li>
+					<li>AS1/2 direct editation - delete operator on anything</li>
+					<li>AS2 - class detection of top level classes</li>
+					<li>AS2 - class detection - warning only if propertyname does not match getter/setter</li>
+					<li>AS2 - some minor cases in class detection</li>
+					<li>AS2 - class detection - ignore standalone directvalues</li>
+					<li>AS1/2 - obfuscated name in forin cannot use eval</li>
+					<li>AS1/2 - Ternar visit (can cause invalid reg declarations)</li>
+					<li>AS1/2 - typeof precedence / parenthesis</li>
+					<li>AS1/2 - switch detection</li>
+					<li>AS1/2 - nested tellTarget</li>
+					<li>AS1/2 - switch with nontrivial expressions like and/or,ternar (second pass)</li>
+					<li>AS1/2 - ifFrameLoaded with nontrivial items inside</li>
+					<li>AS1/2 - direct editation - (mb)length is expressioncommand, not a command</li>
+					<li>AS1/2 - get/set top level properties</li>
+					<li>AS1/2 - properties postincrement</li>
+					<li>AS1/2 - direct editation - allow call on numbers, boolean, etc.</li>
+					<li>AS1/2 - direct editation - try..finally without catch clause</li>
+					<li>AS1/2 - GotoFrame2 - scene bias is first</li>
+					<li>AS1/2 - direct editation - gotoAndPlay/Stop with scenebias</li>
+					<li>AS1/2 - parenthesis around callfunction</li>
+					<li>AS1/2 - deobfuscate function parameter names in registers</li>
+					<li>AS1/2 - direct editation - do..while</li>
+					<li>AS1/2 - newmethod proper brackets</li>
+					<li>AS1/2 - class detection with ternars</li>
+					<li>AS1/2 - empty tellTarget</li>
+					<li>AS1/2 - deobfuscate object literal names</li>
+					<li>AS1/2 - spacing in with statement</li>
+					<li>Playercontrols frame display incorrect frame</li>
+					<li>AS1/2 - direct editation - empty parenthesis nullpointer</li>
+					<li>AS1/2 - delete on nonmember</li>
+					<li>AS1/2 - direct editation - Infinity, NaN can be used as identifiers, are normal variables</li>
+					<li>AS2 - obfuscated class attribute names</li>
+					<li>AS1/2 - newobject deobfuscated name</li>
+					<li>AS2 - obfuscated extends, implements</li>
+					<li>AS1/2 - chained assignments with obfuscated/slash variables</li>
+					<li>AS - direct editation - long integer values</li>
+					<li>AS1/2 - on keypress key escaping</li>
+					<li>AS1/2 - stop/play/etc. can be used in expressions, pushing undefined</li>
+					<li>AS1/2 - startDrag constaint</li>
+					<li>AS1/2 - gotoAndStop/play with simple label compiled as gotolabel</li>
+				</ul>
+			</description>
+		</release>
 		<release version="14.6.0" date="2021-11-22">
 			<description>
 				<p>Added</p>
