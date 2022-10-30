@@ -31,12 +31,12 @@
 			"build-options": {
 				"env": {
 					"JAVA_HOME": "/app/jre",
-					"TOOLS_DIR": "travis/tools"
+					"TOOLS_DIR": "cicd_scripts/tools"
 				}
 			},
 			"build-commands": [
-				"unzip -u ./travis/tools/nsis-3.0-addon.zip -d $TOOLS_DIR/nsis-3.0-src",
-				"tar zxvf ./travis/tools/launch4j-3.12-linux.tgz -C $TOOLS_DIR",
+				"unzip -u ./$TOOLS_DIR/nsis-3.0-addon.zip -d $TOOLS_DIR/nsis-3.0-src",
+				"tar zxvf ./$TOOLS_DIR/launch4j-3.14-linux-x64.tgz -C $TOOLS_DIR",
 				"echo nsis.path = $TOOLS_DIR/nsis-3.0-src/bin > tools.properties",
 				"echo launch4j.path = $TOOLS_DIR/launch4j >> tools.properties",
 				"./make-version-properties.sh",
@@ -52,8 +52,8 @@
 				{
 					"type": "git",
 					"url": "https://github.com/jindrapetrik/jpexs-decompiler.git",
-					"tag": "version15.1.1",
-					"commit": "f058045df36a6f131abab455875591bc3b1d0419",
+					"tag": "version16.0.0",
+					"commit": "7eaab8476bb98b1668302d4fa607a44a93ffb26a",
 					"dest": "jpexs",
 					"x-checker-data": {
 						"type": "git",
