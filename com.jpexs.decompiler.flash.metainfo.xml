@@ -63,6 +63,29 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+		<release version="16.0.1" date="2022-10-31">
+			<description>
+				<p>Added</p>
+				<ul>
+					<li>Allow add tag after header context menu</li>
+					<li>DefineScalingGrid has icon</li>
+					<li>Adding tag "inside" allows setting character id to original when possible</li>
+				</ul>
+				<p>Fixed</p>
+				<ul>
+					<li>Do not show option to Show in taglist on resource view folders</li>
+					<li>Disallow add tag before header context menu</li>
+					<li>Context menu on tags mapped to other characters like DefineScalingGrid</li>
+					<li>Add tag before/after for frame selection position</li>
+					<li>Add tag (before/after/inside) refactored to more meaningful menus</li>
+				</ul>
+				<p>Changed</p>
+				<ul>
+					<li>Add tag renamed to Add tag inside</li>
+					<li>Clone tag menuitem renamed to just Clone as it clones both tags and frames</li>
+				</ul>
+			</description>
+		</release>
 		<release version="16.0.0" date="2022-10-30">
 			<description>
 				<p>Added</p>
