@@ -63,6 +63,54 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+		<release version="16.0.0" date="2022-10-30">
+			<description>
+				<p>Added</p>
+				<ul>
+					<li>Replace characters references</li>
+					<li>Replace commandline action allows to load replacements list from a textfile</li>
+					<li>SymbolClass export from commandline</li>
+					<li>data-characterId and data-characterName tags to SVG export</li>
+					<li>#1731 Image viewer zoom support</li>
+					<li>Cloning of tags and frames</li>
+					<li>Changing tag position</li>
+					<li>Tag list view</li>
+					<li>Inserting new tags before and after selection</li>
+					<li>#1825, #1737 Adding new frames</li>
+					<li>Context menu icons</li>
+					<li>Icon of tag in raw editor</li>
+					<li>#1845 Show warning on opening file in Read only mode (binary search, unknown extensions, etc.)</li>
+					<li>#1845 Show error message on saving in Read only mode, "Save As" must be used</li>
+				</ul>
+				<p>Fixed</p>
+				<ul>
+					<li>#1834 PlaceObject4 tags appear as Unresolved inside of DefineSprite</li>
+					<li>#1839 Sprite frames exported incorrectly and repeating</li>
+					<li>#1838 AS3 - Properly handling of long unsigned values, hex values, default uint values etc.</li>
+					<li>#1847 Shape viewer and PDF exporter - correct drawing of pure vertical/horizontal shapes (zero width/height)</li>
+					<li>Slow zooming/redrawing on action when SWF has low framerate</li>
+					<li>Correct debug info label position/content on the top of flash viewer to avoid unwanted initial scroll</li>
+					<li>#1829 Adding extra pixel to the width and height when rendering items (for example to AVI)</li>
+					<li>#1828 Zero scale layer matrices support</li>
+					<li>#1828 Incorrect stroke scaling (normal/none/vertical/horizontal)</li>
+					<li>#1771 DefineShape4 line filled using single color</li>
+					<li>Minimum stroke width should be 1 px</li>
+					<li>#1828 Closing path in shape strokes from last moveTo only</li>
+					<li>Shape not clipped when clip area ouside of view</li>
+					<li>Sound tag player now uses less memory / threads - does not use Clip sound class</li>
+					<li>Freetransform tool dragging not always started on mousedown</li>
+					<li>#1695 Freetransform tool vs zooming</li>
+					<li>#1752 Freetransform tool on sprites with offset</li>
+					<li>#1711 DefineFont2-3 advance values need to be handled as unsigned (UI16)</li>
+					<li>Leading of the font can be set to negative value</li>
+					<li>Reset configuration button in advanced settings not working</li>
+				</ul>
+				<p>Changed</p>
+				<ul>
+					<li>AS3 integer values are internally (e.g. in the lib) handled as java int type instead of long.</li>
+				</ul>
+			</description>
+		</release>
 		<release version="15.1.1" date="2022-07-03">
 			<description>
 				<p>Added</p>
