@@ -63,6 +63,52 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+		<release version="16.1.0" date="2022-11-06">
+		    <description>
+		        <p>Added</p>
+		        <ul>
+		            <li>#1459, #1832, #1849 AS1/2 direct editation - Error dialog when saved value (UI16, SI16, ...) exceeds its limit and this code cannot be saved.</li>
+		            <li>Attach tag menu (Like DefineScaling grid to DefineSprite, etc.)</li>
+		            <li>Better tag error handling - these tags now got error icon</li>
+		            <li>Show in Hex dump command from other views for tags</li>
+		            <li>Show in Taglist command from dump view for tags</li>
+		            <li>Create new empty SWF file</li>
+		            <li>Checking missing needed character tags and their proper position (Marking them as red - with tooltip)</li>
+		            <li>#1432 Save as EXE from commandline</li>
+		            <li>#1232 Needed/dependent characters list in basic tag info can be expanded to show tag names</li>
+		        </ul>
+		        <p>Fixed</p>
+		        <ul>
+		            <li>Flash viewer - subtract blend mode</li>
+		            <li>#1712, #1857, #1455 JPEG images errors fixer</li>
+		            <li>Ignore missing font on DefineEditText</li>
+		            <li>GFX: Drawing missing DefineExternalImage/2, DefineSubImage as red instead of throwing exception</li>
+		            <li>GFX: DefineExternalImage2 properly saving characterId</li>
+		            <li>Hex view refreshing after selecting Unknown tag</li>
+		            <li>#1818, #1727, #1666 GFX: Importing XML</li>
+		            <li>GFX: Correct refreshing image when raw editing DefineExternalImage/2, DefineSubImage</li>
+		            <li>GFX: DefineExternalImage/2, DefineSubImage disallow not working replace button in favor of raw editing</li>
+		            <li>#1795 AS3 P-code - optional (default parameter values) saving</li>
+		            <li>#1785 AS1/2 try..catch block in for..in</li>
+		            <li>#1770 Links in basictag info (like needed/dependent characters) were barely visible on most themes</li>
+		            <li>Show in Resource command from Hex dump not working for tags inside DefineSprite</li>
+		            <li>File did not appear modified when only header was modified</li>
+		            <li>Copy / Move to tag tree refreshing</li>
+		            <li>Preview of PlaceObject and ShowFrame in the Dump view</li>
+		            <li>FileAttributes tag exception in the Dump view</li>
+		            <li>Adding new frames did not set correct timelined to ShowFrame</li>
+		            <li>Computing dependent characters inside DefineSprite</li>
+		        </ul>
+		        <p>Changed</p>
+		        <ul>
+		            <li>#1455 All tag types are now allowed inside DefineSprite</li>
+		        </ul>
+		        <p>Removed</p>
+		        <ul>
+		            <li>Auto fixing character tags order based on dependencies during saving</li>
+		        </ul>
+		    </description>
+		</release>
 		<release version="16.0.4" date="2022-11-03">
 		    <description>
 		        <p>Fixed</p>
