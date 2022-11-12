@@ -63,6 +63,30 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+		<release version="16.2.0" date="2022-11-08">
+			<description>
+				<p>Added</p>
+				<ul>
+					<li>#1414 Cancelling in-progress exportation</li>
+					<li>#1755 Copy tags to tag clipboard and paste them elsewhere</li>
+					<li>#1460 Bulk importing images</li>
+					<li>Bulk importing scripts/text/images added to SWF context menu</li>
+					<li>#1465 Configuration option to disable SWF preview autoplay</li>
+					<li>Setting for disabling expanding first level of tree nodes on SWF load</li>
+				</ul>
+				<p>Fixed</p>
+				<ul>
+					<li>FLA export printing xxx string on exporting character with id 320</li>
+					<li>Copy to with dependencies does not refresh timeline</li>
+					<li>Copy to with dependencies does not set the timelined, that can result to missing dependencies (red tags in the tree)</li>
+					<li>Double warning/error when copy to / move to and same character id already exists</li>
+					<li>#1862, #1735 Exporting selection to subfolders by SWFname when multiple SWFs selected</li>
+					<li>Java code export indentation</li>
+					<li>Java code does not export tags</li>
+					<li>On new SWF loading, do not expand all other SWFs nodes, only this one</li>
+				</ul>
+			</description>
+		</release>
 		<release version="16.1.0" date="2022-11-06">
 		    <description>
 		        <p>Added</p>
