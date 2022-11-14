@@ -63,6 +63,15 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+		<release version="16.3.1" date="2022-11-14">
+			<description>
+				<p>Fixed</p>
+				<ul>
+					<li>#1867 AS3 - §§hasnext, §§nextvalue, §§nextname in some nonstandard compiled SWFs</li>
+					<li>#1868 Raw editation NullPointerException</li>
+				</ul>
+			</description>
+		</release>
 		<release version="16.3.0" date="2022-11-14">
 			<description>
 				<p>Added</p>
