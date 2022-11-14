@@ -63,6 +63,55 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+		<release version="16.3.0" date="2022-11-14">
+			<description>
+				<p>Added</p>
+				<ul>
+				    <li>Allowed copy/cut tags to clipboard across multiple SWFs</li>
+				    <li>Keyboard shortcuts for tag clipboard operations</li>
+				    <li>Hilight clipboard panel on copy/cut action for a few seconds</li>
+				    <li>Drag and drop to move/copy tags in the tag list view (Can be disabled in settings)</li>
+				    <li>Setting for enabling placing Define tags into DefineSprite</li>
+				    <li>Icons for tags in replace character dialog</li>
+				    <li>Move tag with dependencies</li>
+				    <li>Copy/Move tag operation has select position dialog</li>
+				    <li>Select position dialog has target file in its title</li>
+				    <li>#1649 Moving SWF files (and bundles) up and down (comtext menuitem + ALT up/down shortcut)</li>
+				    <li>Moving tags up and down in the taglist view (context menuitem + ALT up/down shortcut)</li>
+				    <li>#1701 Setting charset for SWF files with version 5 or lower (GUI, commandline)</li>
+				    <li>#1864 Commandline: Allow to set special value "/dev/stdin" for input files to read from stdin (even on Windows)</li>
+				    <li>Show button records in the tree, preview them</li>
+				    <li>Show in Hex dump for BUTTONCONDACTION, BUTTONRECORD, CLIPACTIONRECORD</li>
+				    <li>Alpha and Erase blend modes support</li>
+				    <li>Raw editor - Edit blend modes as enum</li>
+				    <li>Search in the advanced settings</li>
+				</ul>
+				<p>Fixed</p>
+				<ul>
+				    <li>Exception when bundle selected</li>
+				    <li>File path in window title for SWFs inside DefineBinaryData</li>
+				    <li>#1863 Export to PDF - cannot read fonts with long CMAP</li>
+				    <li>Go to document class when switched to tag list view</li>
+				    <li>Copy/Move with dependencies order of tags</li>
+				    <li>#1865 ConcurrentModificationException on SWF close</li>
+				    <li>NullPointerException on expanding needed/dependent characters on basic tag info</li>
+				    <li>Copy/Move with dependencies should copy mapped tags too</li>
+				    <li>Recalculating dependencies in the loop (now only on change)</li>
+				    <li>Dependencies handling</li>
+				    <li>Raw editing of DefineFontInfo/DefineFont2-3, KERNINGRECORD - proper switching wide codes</li>
+				    <li>Storing SWF configuration for files inside bundles and/or binarydata</li>
+				    <li>#1846 blend modes with alpha</li>
+				    <li>Raw editor does not select item in enum list</li>
+				    <li>Sound not played on frames</li>
+				    <li>#1678 Miter clip join - can be enabled in Settings</li>
+				    <li>Html label links visibility</li>
+				</ul>
+				<p>Changed</p>
+				<ul>
+				    <li>Full path inside bundle is displayed as SWF name instead simple name</li>
+				</ul>
+			</description>
+		</release>
 		<release version="16.2.0" date="2022-11-08">
 			<description>
 				<p>Added</p>
