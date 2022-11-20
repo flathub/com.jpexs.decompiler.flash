@@ -63,6 +63,64 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+		<release version="17.0.0" date="2022-11-20">
+		    <description>
+		        <p>Added</p>
+		        <ul>
+		            <li>#1870 AS3 Adding new class - Target DoABC tag or position can be selected to prevent Error 1014</li>
+		            <li>#1871 Toogle buttons for disabling subsprite animation, display preview of sprites/frames</li>
+		            <li>#1875 Remove no longer accessed items from cache after certain amount of time</li>
+		            <li>#1280 AS3 Direct editation of traits with the same name</li>
+		            <li>#1743 GFX - Adding DefineExternalImage2 and DefineSubImage tags</li>
+		            <li>#1822, #1803 AS3 direct editation - optional using AIR (airglobal.swc) to compile</li>
+		            <li>#1501 Bulk import shapes</li>
+		            <li>#1680 Pinning items</li>
+		            <li>Indices in brackets for items with same name (like two subsequent DoAction tags)</li>
+		            <li>Flattened ActionScript packages (one row per package instead package tree), can be turned off in settings</li>
+		            <li>#1820 Opening standalone ABC files (*.abc)</li>
+		            <li>Classes tree inside DoABC tags in taglist view</li>
+		            <li>Export ABC data from DoABC tags</li>
+		        </ul>
+		        <p>Fixed</p>
+		        <ul>
+		            <li>#1869 Replace references now replaces all references, not just PlaceObject</li>
+		            <li>Handle StartSound tag as CharacterIdTag</li>
+		            <li>Clearing shape export cache on changes</li>
+		            <li>Preview of PlaceObject and frames on hex dump view</li>
+		            <li>AS3 Direct editation - Top level classes do not use ":" in their namespace names</li>
+		            <li>AS3 Direct editation - Using "/" separator for method names</li>
+		            <li>Folder preview resizing (scrollbar too long)</li>
+		            <li>#1872 Removing PlaceObject/RemoveObject with no characterid with Remove character action</li>
+		            <li>#1692 Resolving use namespace</li>
+		            <li>#1692 Properly distinguish obfuscated names vs namespace suffixes and attributes</li>
+		            <li>#1757 Binary search - SWF files need to be sorted by file position</li>
+		            <li>#1803 AS3 Direct editation - Colliding catch name with other variable names / arguments</li>
+		            <li>AS3 Direct editation - slow property resolving (Now up to 10 times faster compilation)</li>
+		            <li>#1875 Garbage collect SWF and its caches after closing it</li>
+		            <li>#1807 Proper parenthesis around call inside another call</li>
+		            <li>#1840 AS3 - Allow to compile object literal keys with nonstring/numbers in obfuscated code</li>
+		            <li>#1840 AS3 Direct editation - Type mismatched for a trait</li>
+		            <li>#1840 Proper if..continue..break handling</li>
+		            <li>#1877 Recalculate dependent characters and frames on removing / editing item</li>
+		            <li>DefineShape4 SVG import NullPointerException</li>
+		            <li>List of objects under cursor and coordinates not showing</li>
+		            <li>ConcurrentModificationException in getCharacters on exit</li>
+		            <li>Header of display panel not visible on certain color schemes</li>
+		            <li>Move tag to action did not remove original tag</li>
+		            <li>Show in tag list from tag scripts</li>
+		            <li>Move/Copy tag to action on tag scripts</li>
+		            <li>#1879 False tag order error with SoundStreamHead</li>
+		            <li>Error messages during SWF/ABC reading have correct error icon and title, are translatable</li>
+		        </ul>
+		        <p>Changed</p>
+		        <ul>
+		            <li>GFX - DefineExternalImage2 no longer handled as character</li>
+		            <li>Raw editor does not show tag name in the tree (it's now in the new pinnable head)</li>
+		            <li>DoInitAction is not shown in resources/sprites section, only in scripts</li>
+		            <li>ActionScript packages are by default flattened (can be turned off in settings)</li>
+		        </ul>
+		    </description>
+		</release>
 		<release version="16.3.1" date="2022-11-14">
 			<description>
 				<p>Fixed</p>
