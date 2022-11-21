@@ -63,6 +63,22 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+	    <release version="17.0.1" date="2022-11-21">
+	        <description>
+	            <p>Added</p>
+	            <ul>
+	                <li>PR119 Option to set scale factor in advanced settings (Set it to 2.0 on Mac retina displays)</li>
+	            </ul>
+	            <p>Fixed</p>
+	            <ul>
+	                <li>#1880 JPEG Fixer</li>
+	                <li>Close action from menu not available on bundles (zip, etc...)</li>
+	                <li>#1881 Wrong locale reference for invalid tag order</li>
+	                <li>New file action</li>
+	                <li>Moving tags to frames</li>
+	            </ul>
+	        </description>
+	    </release>
 		<release version="17.0.0" date="2022-11-20">
 		    <description>
 		        <p>Added</p>
