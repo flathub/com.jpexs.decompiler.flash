@@ -63,6 +63,14 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+	    <release version="17.0.2" date="2022-11-22">
+	        <description>
+	            <p>Fixed</p>
+	            <ul>
+	                <li>#1882 Close button on the menu toolbar</li>
+	            </ul>
+	        </description>
+	    </release>
 	    <release version="17.0.1" date="2022-11-21">
 	        <description>
 	            <p>Added</p>
