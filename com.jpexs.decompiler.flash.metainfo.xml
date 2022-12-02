@@ -63,6 +63,46 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+	    <release version="17.0.4" date="2022-12-02">
+	        <description>
+	            <p>Fixed</p>
+	            <ul>
+	                <li>#1888 Casts for missing types, cast handling for script local classes</li>
+	                <li>#1895 Handling of unstructured switch</li>
+	                <li>#1896 NullPointer during deobfuscation</li>
+	            </ul>
+	        </description>
+	    </release>
+	    <release version="17.0.3" date="2022-11-30">
+	        <description>
+	            <p>Added</p>
+	            <ul>
+	                <li>Translator tool for easier localization</li>
+	                <li>AS3 improved goto declaration for properties and methods</li>
+	                <li>playerglobal.swc and airglobal.swf now part of FFDec bundle</li>
+	            </ul>
+	            <p>Fixed</p>
+	            <ul>
+	                <li>#1769 AS3 - Missing some body trait variable declaration</li>
+	                <li>#1769, #1888 AS3 - Missing casts like int()</li>
+	                <li>#1890 AS3 - Chained assignments in some special cases</li>
+	                <li>#1810 AS3 Direct editation - XML attribute handling</li>
+	                <li>#1810 AS3 Direct editation - Calls inside submethods using this</li>
+	                <li>#1891 AS3 - duplicate variable declaration in some cases</li>
+	                <li>All SWF classes inside DoABC tags in the taglist view</li>
+	                <li>Exception on package selection inside DoABC tag on taglist view</li>
+	                <li>#1892 AS3 - Package internal custom namespaces</li>
+	                <li>Unpin all context menu not clearing pins properly</li>
+	                <li>AS3 - RegExp escaping</li>
+	                <li>AS3 - Avoid Error Implicit coercion of a value of type XXX to an unrelated type YYY</li>
+	                <li>AS3 - XML - get descendants operator parenthesis</li>
+	                <li>Switch decompilation in some corner cases</li>
+	                <li>#1894 Switches vs loops decompilation (now with two passes)</li>
+	                <li>#1894 AS3 - XML filters in some corner cases</li>
+	                <li>#1887 AS3 - strict equals operator decompilation</li>
+	            </ul>
+	        </description>
+	    </release>
 	    <release version="17.0.2" date="2022-11-22">
 	        <description>
 	            <p>Fixed</p>
