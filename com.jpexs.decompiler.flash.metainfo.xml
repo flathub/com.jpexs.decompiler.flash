@@ -63,6 +63,73 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+	    <release version="18.0.0" date="2022-12-18">
+	        <description>
+	            <p>Added</p>
+	            <ul>
+	                <li>#1898 Keyboard shortcut to remove tags (DEL, SHIFT+DEL)</li>
+	                <li>#1511, #1765 Quick search tree (Ctrl+F) for everything, not just AS3 classes</li>
+	                <li>Quick search (Ctrl+F) for tag list view</li>
+	                <li>#1884 Memory search - show size and adress in hex, show only aligned to N bytes</li>
+	                <li>AS3 - "internal" keyword support</li>
+	                <li>ProductInfo tag information display</li>
+	                <li>DebugId tag proper display and editation</li>
+	                <li>#1564, #1676, #1697, #1893 Display of DefineVideoStream tags with VLC player</li>
+	                <li>List of treenode subitems on otherwise empty panel (with 32x32 icons)</li>
+	                <li>DefineVideoStream codecId and videoFlagsDeblocking handled as enums in raw editation</li>
+	                <li>Option to mute frame sounds</li>
+	                <li>Experimental option to fix conflation artifacts in antialising (slow)</li>
+	                <li>Option to disable autoplay of sounds (DefineSound)</li>
+	                <li>#1181 Remembering choice of loading assets via importassets tag</li>
+	                <li>#1900 Free transform whole sprites</li>
+	                <li>Show axis as dashed line in Free transform of sprites</li>
+	                <li>#1900 Transformation panel with flip/move/scale/rotate/skew/matrix options</li>
+	                <li>#1900 Move object around with arrow keys (in transform mode)</li>
+	                <li>Alt + click selects PlaceObjectTag under cursor</li>
+	                <li>#1901 Double click tree node to start edit (can be enabled in settings)</li>
+	                <li>Info about editation in status bar</li>
+	                <li>AS3 P-code keyword "Unknown(N)", where N is index. For constants out of bounds. (mostly in dead code)</li>
+	                <li>AS3 P-code - Editing methods without body (interfaces / native methods)</li>
+	            </ul>
+	            <p>Fixed</p>
+	            <ul>
+	                <li>#1897 Close menu button without selecting specific item</li>
+	                <li>Reading UI32 values</li>
+	                <li>Parsing obfuscated namespaces with hash character "#"</li>
+	                <li>Tag dependency checking</li>
+	                <li>#1884 Memory search - Logged exception when cannot get page range</li>
+	                <li>#1884 Memory search - Exception on sorting by pid</li>
+	                <li>#1006 AS3 - Warning - Function value used where type Boolean was expected</li>
+	                <li>AS3 - Resolving types on static protected namespaced properties</li>
+	                <li>Hiding selection after raw editation save</li>
+	                <li>Proper disabling switching items or other actions on editation</li>
+	                <li>Raw editor item count and edit display</li>
+	                <li>Warnings about invalid reflective access in color dialog on Java 9+</li>
+	                <li>Folder preview tag names have indices when multiple with same name</li>
+	                <li>ShapeImporter fillstyles shapenum</li>
+	                <li>Reload button disabled after saving new file</li>
+	                <li>PlaceObject tag - do not display export name twice</li>
+	                <li>Loading nested characters when Importassets tag used</li>
+	                <li>Hide various actions for imported tags</li>
+	                <li>Clone tag</li>
+	                <li>Hide freetransform button in readonly mode</li>
+	                <li>Maintain export name/class on imported tags</li>
+	                <li>Classnames in PlaceObject</li>
+	                <li>#1828 AS1/2 deobfuscation removing variable declarations</li>
+	                <li>Loaded SWFs using "Open loaded during play" feature have short filenames</li>
+	                <li>#1796 Exception on closing multiple SWFs</li>
+	                <li>AS3 Deobfuscation causing invalid jump offsets for files with constant indices out of bounds</li>
+	                <li>AS3 - "native" modifier only for methods with EXPLICIT flag</li>
+	                <li>AS3 - AS3 builtin namespace visibility</li>
+	            </ul>
+	            <p>Changed</p>
+	            <ul>
+	                <li>Quick search needs minimum of 3 characters</li>
+	                <li>AS1/2 deobfuscation - removing obfuscated declarations is now optional (default: off)</li>
+	                <li>AS3 - order of modifiers: final, override, access, static, native</li>
+	            </ul>
+	        </description>
+	    </release>
 	    <release version="17.0.4" date="2022-12-02">
 	        <description>
 	            <p>Fixed</p>
