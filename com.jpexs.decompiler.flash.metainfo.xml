@@ -63,6 +63,61 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+	    <release version="18.1.0" date="2022-12-23">
+	    	<description>
+	            <p>Added</p>
+	            <ul>
+	                <li>Deobfuscation and its options as icons on script panel toolbar</li>
+	                <li>Warning before switching auto rename identifiers on</li>
+	                <li>#1231 Button transforming</li>
+	                <li>#1690 Deobfuscation tool dialog for script level (not just current method / all classes)</li>
+	                <li>#1460 Commandline import of text, images, shapes, symbol-class</li>
+	                <li>#1909 Export/import DefineBitsJPEG3/4s alpha channel to/from separate file
+	                ("PNG/GIF/JPEG+alpha" option in GUI, "-format image:png_gif_jpeg_alpha" for commandline)</li>
+	                <li>#1910 Copy/paste transform matrix to/from the clipboard</li>
+	                <li>#1912 Persist selected item in the tree upon quick search (Ctrl+F)</li>
+	                <li>#1901 Editor mode and autosave feature for header, raw editor, transform</li>
+	                <li>#583 FlashPaper SWF to PDF with selectable text (commandline)</li>
+	                <li>#1858 PDF export - JPEG with alpha channel exported as is</li>
+	            </ul>
+	            <p>Fixed</p>
+	            <ul>
+	                <li>#1904 NullPointerException when renaming invalid identifiers in AS1/2 files caused by missing charset</li>
+	                <li>#1904 NullPointerException when fast switching items</li>
+	                <li>#1904 NullPointerException on ErrorLog frame</li>
+	                <li>#1904 NullPointerException on decompiler pool</li>
+	                <li>#1904 AS1/2 Simplify expressions breaks registers, functions</li>
+	                <li>#1904 AS1/2 Throw is an ExitItem to properly handle continues vs ifs</li>
+	                <li>#595 AS3 direct editation - protected property resolving</li>
+	                <li>AS3 direct editation and decompiler share same AbcIndex</li>
+	                <li>BUTTONRECORD display does not use its Matrix</li>
+	                <li>Editation status not cleared after Sprite transforming</li>
+	                <li>Image flickering</li>
+	                <li>Show Hex dump for AS1/2 script tags</li>
+	                <li>Speaker image when sound selected not in the center</li>
+	                <li>#1908 Slow commandline opening SWF</li>
+	                <li>#1908 Shape/image import must accept also filenames in the form "CHARID_xxx.ext" instead of just "CHARID.ext"</li>
+	                <li>Exporting DefineJPEG3/4 with alpha channel to PNG produced JPEG instead</li>
+	                <li>AS3 package level const with function value - separate P-code for trait and method</li>
+	                <li>Slot/const trait proper p-code indentation</li>
+	                <li>#1858 PDF export - Adding same ExtGState multiple times,</li>
+	                <li>#1858 PDF export - Applying same alpha/blendmode multiple times</li>
+	                <li>#1858 PDF export - Applying same color multiple times</li>
+	                <li>#1907 Crashing on memory search</li>
+	                <li>#1906 Memory search - byte align opens wrong SWFs</li>
+	            </ul>
+	            <p>Changed</p>
+	            <ul>
+	                <li>Warning before switching deobfuscation is now optional</li>
+	                <li>#1690 Redesigned Deobfuscation tool dialog.</li>
+	                <li>Shape/image/script/text import does not require specific folder name inside (but still preffers it when exists)</li>
+	            </ul>
+	            <p>Removed</p>
+	            <ul>
+	                <li>"Restore control flow" deobfuscation level as it was the same as "Remove traps"</li>
+	            </ul>
+	        </description>
+	    </release>
 	    <release version="18.0.0" date="2022-12-18">
 	        <description>
 	            <p>Added</p>
