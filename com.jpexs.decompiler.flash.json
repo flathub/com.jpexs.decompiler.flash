@@ -46,14 +46,14 @@
 				"install -Dm755 resources/ffdec.sh -t /app/bin",
 				"install -Dm644 resources/icon.png /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png",
 				"install -Dm644 ../${FLATPAK_ID}.desktop -t /app/share/applications",
-				"install -Dm644 ../${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo"
+				"install -Dm644 resources/${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo"
 			],
 			"sources": [
 				{
 					"type": "git",
 					"url": "https://github.com/jindrapetrik/jpexs-decompiler.git",
-					"tag": "version18.3.0",
-					"commit": "a63166af4f514736697c2fd1b23837b1f44a6183",
+					"tag": "version18.3.3",
+					"commit": "ff0ad6d217d1a44d9aba64f015d592b382bf74eb",
 					"dest": "jpexs",
 					"x-checker-data": {
 						"type": "git",
@@ -70,10 +70,6 @@
 					"url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.9-bin.tar.xz",
 					"sha512": "ecb09c83b24f98b9475849548558809ff21c88f8d39fbc3559f24df5fc640a50bbd885681d9c676285d8843bd3dc09a6238189c13a4238ba5c01385a5bd29542",
 					"dest": "ant"
-				},
-				{
-					"type": "file",
-					"path": "com.jpexs.decompiler.flash.metainfo.xml"
 				},
 				{
 					"type": "file",
