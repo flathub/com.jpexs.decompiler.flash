@@ -1,0 +1,30 @@
+From 20b5262ae17e52c1af816d493bd16e67b91284ae Mon Sep 17 00:00:00 2001
+From: Stefan Hansson <newbie13xd@gmail.com>
+Date: Mon, 16 Oct 2023 11:55:55 +0200
+Subject: [PATCH] Fix incorrect quotation marks
+
+With these included, the resulting path looks something like this:
+
+    '"/app/bin'
+
+That will always be an invalid path due to the extra double quote.
+---
+ resources/ffdec.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/resources/ffdec.sh b/resources/ffdec.sh
+index 3ddf7b35e..025524f5b 100644
+--- a/resources/ffdec.sh
++++ b/resources/ffdec.sh
+@@ -70,7 +70,7 @@ PROGRAM="$0"
+ while [ -L "$PROGRAM" ]; do
+ 	PROGRAM=$(readlink -f "$PROGRAM")
+ done
+-pushd "$(dirname \"$PROGRAM\")" > /dev/null
++pushd "$(dirname "$PROGRAM")" > /dev/null
+ 
+ search_jar_file || exit 1
+ 
+-- 
+2.41.0
+

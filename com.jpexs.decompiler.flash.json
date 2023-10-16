@@ -74,6 +74,11 @@
 				{
 					"type": "file",
 					"path": "com.jpexs.decompiler.flash.desktop"
+				},
+				{
+					"type": "patch",
+					"path": "0001-Fix-incorrect-quotation-marks.patch",
+					"dest": "jpexs"
 				}
 			]
 		}
