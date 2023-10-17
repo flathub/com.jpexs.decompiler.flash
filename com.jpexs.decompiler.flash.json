@@ -52,8 +52,8 @@
 				{
 					"type": "git",
 					"url": "https://github.com/jindrapetrik/jpexs-decompiler.git",
-					"tag": "version19.1.0",
-					"commit": "2f9d9aefd5c640c6148c5753550c2fb5ea236ed3",
+					"tag": "version19.1.1",
+					"commit": "7686531e6a4dd4cfd123cb3efb229f46a4f9a615",
 					"dest": "jpexs",
 					"x-checker-data": {
 						"type": "git",
@@ -74,11 +74,6 @@
 				{
 					"type": "file",
 					"path": "com.jpexs.decompiler.flash.desktop"
-				},
-				{
-					"type": "patch",
-					"path": "0001-Fix-incorrect-quotation-marks.patch",
-					"dest": "jpexs"
 				}
 			]
 		}
