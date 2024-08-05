@@ -1,0 +1,30 @@
+From 4bbfe4437f7b9436d4e7ab7a6f727e064930c5b3 Mon Sep 17 00:00:00 2001
+From: Stefan Hansson <newbyte@postmarketos.org>
+Date: Mon, 5 Aug 2024 20:47:31 +0200
+Subject: [PATCH 1/2] Use developer tag instead of developer_name tag in
+ Appstream metainfo
+
+<developer_name> has been deprecated:
+https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-developer_name
+---
+ resources/com.jpexs.decompiler.flash.metainfo.xml | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/resources/com.jpexs.decompiler.flash.metainfo.xml b/resources/com.jpexs.decompiler.flash.metainfo.xml
+index b9ff70d61..fe4b31008 100644
+--- a/resources/com.jpexs.decompiler.flash.metainfo.xml
++++ b/resources/com.jpexs.decompiler.flash.metainfo.xml
+@@ -2,7 +2,9 @@
+ <component type="desktop-application">
+ 	<id>com.jpexs.decompiler.flash</id>
+ 	<name>JPEXS Free Flash Decompiler</name>
+-	<developer_name>Jindra Petřík and contributors</developer_name>
++	<developer id="com.jpexs">
++		<name>Jindra Petřík and contributors</name>
++	</developer>
+ 	<summary>Decompile and edit SWF files</summary>
+ 	<launchable type="desktop-id">com.jpexs.decompiler.flash.desktop</launchable>
+ 	<metadata_license>CC0-1.0</metadata_license>
+-- 
+2.45.2
+
