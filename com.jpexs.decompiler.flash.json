@@ -52,8 +52,8 @@
 				{
 					"type": "git",
 					"url": "https://github.com/jindrapetrik/jpexs-decompiler.git",
-					"tag": "version21.0.0",
-					"commit": "f23e736100389c5c74fc99e50b9c5244f49ea6d1",
+					"tag": "version21.0.1",
+					"commit": "282fc7eaa030651b22f0c35a0a2ffe0a62ae5193",
 					"dest": "jpexs",
 					"x-checker-data": {
 						"type": "git",
@@ -74,16 +74,6 @@
 				{
 					"type": "file",
 					"path": "com.jpexs.decompiler.flash.desktop"
-				},
-				{
-					"type": "patch",
-					"path": "0001-Use-developer-tag-instead-of-developer_name-tag-in-A.patch",
-					"dest": "jpexs"
-				},
-				{
-					"type": "patch",
-					"path": "0002-Remove-links-from-Appstream-metainfo.patch",
-					"dest": "jpexs"
 				}
 			]
 		}
