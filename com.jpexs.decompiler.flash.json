@@ -52,8 +52,8 @@
 				{
 					"type": "git",
 					"url": "https://github.com/jindrapetrik/jpexs-decompiler.git",
-					"tag": "version21.0.4",
-					"commit": "0e8ce16c4cab27002ae6d078a0ebaf907c11ed9c",
+					"tag": "version21.0.5",
+					"commit": "a884da26d4ccf898757633279284bca4288e1e9d",
 					"dest": "jpexs",
 					"x-checker-data": {
 						"type": "git",
@@ -74,11 +74,6 @@
 				{
 					"type": "file",
 					"path": "com.jpexs.decompiler.flash.desktop"
-				},
-				{
-					"type": "patch",
-					"path": "0001-Regenerate-Appstream-metainfo.patch",
-					"dest": "jpexs"
 				}
 			]
 		}
