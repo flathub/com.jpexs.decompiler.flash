@@ -35,8 +35,6 @@
 				}
 			},
 			"build-commands": [
-				"unzip -u ./$TOOLS_DIR/nsis-3.0-addon.zip -d $TOOLS_DIR/nsis-3.0-src",
-				"tar zxvf ./$TOOLS_DIR/launch4j-3.14-linux-x64.tgz -C $TOOLS_DIR",
 				"echo nsis.path = $TOOLS_DIR/nsis-3.0-src/bin > tools.properties",
 				"echo launch4j.path = $TOOLS_DIR/launch4j >> tools.properties",
 				"./make-version-properties.sh",
@@ -70,6 +68,18 @@
 					"url": "https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.9-bin.tar.xz",
 					"sha512": "ecb09c83b24f98b9475849548558809ff21c88f8d39fbc3559f24df5fc640a50bbd885681d9c676285d8843bd3dc09a6238189c13a4238ba5c01385a5bd29542",
 					"dest": "ant"
+				},
+				{
+					"type": "archive",
+					"url": "https://github.com/jindrapetrik/jpexs-decompiler/raw/refs/tags/version22.0.1/cicd_scripts/tools/nsis-3.0-addon.zip",
+					"sha512": "f1441ec8c3b3db8719d9d3a5ef18a81b9c6695c53f25ecabc573f9eaa0dde8b55f06b0544bf61bcfc8664210111b5d48ff491dffcccd740b0efd42bdbb1b70f0",
+					"dest": "$TOOLS_DIR/nsis-3.0-src"
+				},
+				{
+					"type": "archive",
+					"url": "https://github.com/jindrapetrik/jpexs-decompiler/raw/refs/tags/version22.0.1/cicd_scripts/tools/launch4j-3.14-linux-x64.tgz",
+					"sha512": "72b6030b6d6747455c29829498ff37fd4c2724c1922060d7fbed0f2423e95c67bd1cd923117702eeabc25c32b8f7cf4efe80998901623a5a57c176d5a6eaacef",
+					"dest": "$TOOLS_DIR"
 				},
 				{
 					"type": "file",
