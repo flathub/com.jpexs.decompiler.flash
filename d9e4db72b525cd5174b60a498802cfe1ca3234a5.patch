@@ -1,0 +1,22 @@
+From d9e4db72b525cd5174b60a498802cfe1ca3234a5 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jindra=20Pet=C5=99=C3=ADk?= <jindra.petrik@gmail.com>
+Date: Wed, 25 Jun 2025 18:11:42 +0200
+Subject: [PATCH] Fixed tags in the meta info
+
+---
+ resources/com.jpexs.decompiler.flash.metainfo.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/resources/com.jpexs.decompiler.flash.metainfo.xml b/resources/com.jpexs.decompiler.flash.metainfo.xml
+index a0c474de42..1c9fcba272 100644
+--- a/resources/com.jpexs.decompiler.flash.metainfo.xml
++++ b/resources/com.jpexs.decompiler.flash.metainfo.xml
+@@ -103,7 +103,7 @@
+ 				<p>Changed</p>
+ 				<ul>
+ 					<li>AS1/2 - Single DoAction tag inside frame is now displayed directly as frame node so there is no longer need to expand frame nodes (useful for fast switching scripts)</li>
+-					<li>AS1/2 - Scripts from default package (not these inside `__Packages`) are now exported/imported to/from main scripts folder instead of localized `<default package>` before. (Only happened when package flattening was on) This may break backwards compatibility. For importing scripts from older versions of FFDec, you should move the scripts from `<default package>` to main scripts folder.</li>
++					<li>AS1/2 - Scripts from default package (not these inside `__Packages`) are now exported/imported to/from main scripts folder instead of localized `&lt;default package&gt;` before. (Only happened when package flattening was on) This may break backwards compatibility. For importing scripts from older versions of FFDec, you should move the scripts from `&lt;default package&gt;` to main scripts folder.</li>
+ 					<li>SWF to XML export in GUI dialog selects a XML file instead of directory (and directory when multiple SWFs are selected)</li>
+ 				</ul>
+ 				<p>Fixed</p>
