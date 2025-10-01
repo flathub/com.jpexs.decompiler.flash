@@ -1,10 +1,12 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
+MimeType=application/x-shockwave-flash;application/vnd.adobe.flash.movie;
+StartupWMClass=com-jpexs-decompiler-flash-gui-Main
 Terminal=false
 Name=JPEXS Free Flash Decompiler
 Comment=Decompiler and editor of Flash SWF files
-Exec=ffdec.sh
+Exec=ffdec.sh %F
 Icon=com.jpexs.decompiler.flash
 Categories=Development;Network;Utility;WebDevelopment;Java
 X-Purism-FormFactor=Workstation;
