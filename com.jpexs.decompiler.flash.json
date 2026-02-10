@@ -35,10 +35,8 @@
 				}
 			},
 			"build-commands": [
-				"echo nsis.path = $TOOLS_DIR/nsis-3.0-src/bin > tools.properties",
-				"echo launch4j.path = $TOOLS_DIR/launch4j >> tools.properties",
 				"./make-version-properties.sh",
-				"../ant/bin/ant new-version-archive",
+				"../ant/bin/ant new-version-set build archive",
 				"mkdir -p /app/bin",
 				"mv dist/* /app/bin",
 				"install -Dm755 resources/ffdec.sh -t /app/bin",
@@ -50,8 +48,8 @@
 				{
 					"type": "git",
 					"url": "https://github.com/jindrapetrik/jpexs-decompiler.git",
-					"tag": "version24.1.2",
-					"commit": "70da3794502e01edee637ac08b2e83d7faca9478",
+					"tag": "version25.0.0",
+					"commit": "4605bbcee0cd7671769d20aecadf423fbde34a67",
 					"dest": "jpexs",
 					"x-checker-data": {
 						"type": "git",
