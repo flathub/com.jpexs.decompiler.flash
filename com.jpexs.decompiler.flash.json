@@ -48,8 +48,8 @@
 				{
 					"type": "git",
 					"url": "https://github.com/jindrapetrik/jpexs-decompiler.git",
-					"tag": "version25.0.0",
-					"commit": "4605bbcee0cd7671769d20aecadf423fbde34a67",
+					"tag": "version25.1.0",
+					"commit": "f32fd850bbe79a51ddb7356ffde2cfeb07830163",
 					"dest": "jpexs",
 					"x-checker-data": {
 						"type": "git",
